@@ -13,6 +13,7 @@
 		2B5690C41E368211009D9668 /* myFirstParseServer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B5690C21E368211009D9668 /* myFirstParseServer.xcdatamodeld */; };
 		2B5690C61E368211009D9668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5690C51E368211009D9668 /* Assets.xcassets */; };
 		2B5690C91E368211009D9668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5690C71E368211009D9668 /* LaunchScreen.storyboard */; };
+		4C19C1724F16895B4463065E /* Pods_myFirstParseServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8110C76F8C8C1E6CE0B65E9E /* Pods_myFirstParseServer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		2B5690C51E368211009D9668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B5690C81E368211009D9668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B5690CA1E368211009D9668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8110C76F8C8C1E6CE0B65E9E /* Pods_myFirstParseServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myFirstParseServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		921BE8ED24C95C86C202F077 /* Pods-myFirstParseServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFirstParseServer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myFirstParseServer/Pods-myFirstParseServer.debug.xcconfig"; sourceTree = "<group>"; };
+		B1A64929A2DCE9847629388A /* Pods-myFirstParseServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFirstParseServer.release.xcconfig"; path = "Pods/Target Support Files/Pods-myFirstParseServer/Pods-myFirstParseServer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C19C1724F16895B4463065E /* Pods_myFirstParseServer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2B5690BA1E368211009D9668 /* myFirstParseServer */,
 				2B5690B91E368211009D9668 /* Products */,
+				4956F46852783B74B9B471BD /* Pods */,
+				3A9BFAEBF52730ECBE30E508 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = myFirstParseServer;
 			sourceTree = "<group>";
 		};
+		3A9BFAEBF52730ECBE30E508 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8110C76F8C8C1E6CE0B65E9E /* Pods_myFirstParseServer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4956F46852783B74B9B471BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				921BE8ED24C95C86C202F077 /* Pods-myFirstParseServer.debug.xcconfig */,
+				B1A64929A2DCE9847629388A /* Pods-myFirstParseServer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B5690CD1E368211009D9668 /* Build configuration list for PBXNativeTarget "myFirstParseServer" */;
 			buildPhases = (
+				650AC1680DE97E22AD3777CF /* [CP] Check Pods Manifest.lock */,
 				2B5690B41E368210009D9668 /* Sources */,
 				2B5690B51E368210009D9668 /* Frameworks */,
 				2B5690B61E368210009D9668 /* Resources */,
+				5CB2AA57597EDD899E8780E0 /* [CP] Embed Pods Frameworks */,
+				FA12AE866A2BECA176684DCE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CB2AA57597EDD899E8780E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myFirstParseServer/Pods-myFirstParseServer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		650AC1680DE97E22AD3777CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA12AE866A2BECA176684DCE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myFirstParseServer/Pods-myFirstParseServer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B5690B41E368210009D9668 /* Sources */ = {
@@ -263,6 +338,7 @@
 		};
 		2B5690CE1E368211009D9668 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 921BE8ED24C95C86C202F077 /* Pods-myFirstParseServer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S7KV3J2AMW;
@@ -276,6 +352,7 @@
 		};
 		2B5690CF1E368211009D9668 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A64929A2DCE9847629388A /* Pods-myFirstParseServer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S7KV3J2AMW;
