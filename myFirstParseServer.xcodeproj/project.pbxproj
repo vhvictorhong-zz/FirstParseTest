@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B19EB501E3689C100B31407 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19EB4F1E3689C100B31407 /* TableViewController.swift */; };
 		2B5690BC1E368211009D9668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5690BB1E368211009D9668 /* AppDelegate.swift */; };
 		2B5690BE1E368211009D9668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5690BD1E368211009D9668 /* ViewController.swift */; };
 		2B5690C11E368211009D9668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5690BF1E368211009D9668 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B19EB4F1E3689C100B31407 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		2B5690B81E368211009D9668 /* myFirstParseServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFirstParseServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5690BB1E368211009D9668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B5690BD1E368211009D9668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				2B5690BB1E368211009D9668 /* AppDelegate.swift */,
 				2B5690BD1E368211009D9668 /* ViewController.swift */,
+				2B19EB4F1E3689C100B31407 /* TableViewController.swift */,
 				2B5690BF1E368211009D9668 /* Main.storyboard */,
 				2B5690C51E368211009D9668 /* Assets.xcassets */,
 				2B5690C71E368211009D9668 /* LaunchScreen.storyboard */,
@@ -218,6 +221,7 @@
 				2B5690BE1E368211009D9668 /* ViewController.swift in Sources */,
 				2B5690BC1E368211009D9668 /* AppDelegate.swift in Sources */,
 				2B5690C41E368211009D9668 /* myFirstParseServer.xcdatamodeld in Sources */,
+				2B19EB501E3689C100B31407 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +387,7 @@
 				2B5690CF1E368211009D9668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
