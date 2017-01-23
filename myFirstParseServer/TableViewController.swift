@@ -54,6 +54,13 @@ class TableViewController: UITableViewController {
         return cell
     }
  
+    @IBAction func createButton(_ sender: UIBarButtonItem) {
+        
+        let testObj = PFObject(className: "Food")
+        testObj["name"] = "jerk chicken"
+        testObj.saveInBackground()
+        tableView.reloadData()
+    }
     /*
     // MARK: - Navigation
 
