@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AoM-XG-z4Y" id="rUF-PI-3iM">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -36,6 +36,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Create" id="WGK-lV-k84">
                             <connections>
                                 <action selector="createButton:" destination="1HQ-Be-m5b" id="Kzp-1V-Igi"/>
+                                <segue destination="6lH-Hn-NKB" kind="show" id="fwM-2O-Gt3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -43,6 +44,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSe-81-fgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="692" y="-26.53673163418291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bbx-d2-4Uu">
+            <objects>
+                <viewController id="6lH-Hn-NKB" customClass="ViewController" customModule="myFirstParseServer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WiQ-Gr-DdE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Exc-o4-g2n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G9b-wz-WNj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LhA-UY-cY8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LhA-UY-cY8" firstAttribute="top" secondItem="WiQ-Gr-DdE" secondAttribute="bottom" id="8TZ-4F-IAU"/>
+                            <constraint firstItem="LhA-UY-cY8" firstAttribute="leading" secondItem="G9b-wz-WNj" secondAttribute="leading" id="WSQ-Gg-AX6"/>
+                            <constraint firstItem="Exc-o4-g2n" firstAttribute="top" secondItem="LhA-UY-cY8" secondAttribute="bottom" id="Xtc-yv-Y7t"/>
+                            <constraint firstAttribute="trailing" secondItem="LhA-UY-cY8" secondAttribute="trailing" id="eh5-3A-aul"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="LhA-UY-cY8" id="z2J-4v-eQe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V3P-g4-7Re" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1393" y="-27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lZ0-BG-5Nd">
