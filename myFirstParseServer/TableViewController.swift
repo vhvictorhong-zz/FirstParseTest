@@ -60,6 +60,7 @@ class TableViewController: UITableViewController {
         testObj["name"] = "jerk chicken"
         testObj.saveInBackground()
         tableView.reloadData()
+        
     }
     /*
     // MARK: - Navigation
