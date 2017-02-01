@@ -56,9 +56,28 @@ class TableViewController: UITableViewController {
  
     @IBAction func createButton(_ sender: UIBarButtonItem) {
         
-        let testObj = PFObject(className: "Food")
+        /*let testObj = PFObject(className: "Food")
         testObj["name"] = "jerk chicken"
-        testObj.saveInBackground()
+        testObj.saveInBackground()*/
+        let imageData = UIImagePNGRepresentation(#imageLiteral(resourceName: "women30"))
+        let file = PFFile(name: "women30.png", data: imageData!)
+        file?.saveInBackground(block: { (success, error) in
+            
+            if success {
+                let imageObj = PFObject(className: "Image")
+                imageObj["imageFile"]  = file
+                imageObj.saveInBackground(block: { (success, error) in
+                    
+                    if error == nil {
+                        print("data uploaded")
+                    } else {
+                        print(error ?? "")
+                    }
+                    
+                })
+            }
+        })
+        
         tableView.reloadData()
         
     }
